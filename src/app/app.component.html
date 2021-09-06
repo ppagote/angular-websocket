@@ -1,0 +1,9 @@
+<p *ngIf="outputData != undefined; else loading">
+  {{outputData.name}}
+  {{outputData.lastname}}
+   {{outputData.message}}
+</p>
+
+<ng-template #loading>
+  <p>Loading price...</p>
+</ng-template>
